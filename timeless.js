@@ -21,7 +21,7 @@ class TimelyClass extends React.Component<void, TimelyProps, void> {
   }
 }
 
-const TimelyStateless = (props: TimelyProps) => {
+export const TimelyStateless = (props: TimelyProps) => {
     const hours = props.date.getHours();
     const timeOfDay = hours > 17 ? 'Evening' : hours > 12 ? 'Afternoon' : 'Morning';
 
